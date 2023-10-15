@@ -1,7 +1,111 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rüveyda Şahyar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Hi!</h1>
-<p>Placeholder text</p>
+    <nav>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="mailto:ruveyda.sahyar@boun.edu.tr">Contact</a></li>
+            <li><a href="src/cv.pdf">CV</a></li>
+        </ul>
+    </nav>
+    <section>
+        <img src="src/header.jpeg" alt="header picture of me in front of some trees" style="max-width: 100%; height: auto;">
+        <div class="center">
+            <div style=" margin: 2% 5%;">
+                <h1>Rüveyda Şahyar 
+                    <span style="font-style: italic; font-weight: 100; font-size: medium;">(any/all)</span>
+                </h1> 
+                <p>[ɹyʋejˈdaː ˈʃaxjar̥] </p>
+                <a href="https://github.com/ruveydatriesstuff" style="color:#434343;">GitHub</a>
+                <br>
+                <a href="https://www.linkedin.com/in/ruveydasahyar/" style="color:#434343;">LinkedIn</a>
+                <br>
+                
+            </div>
+            <div style="width: 75%;"><p class="paragraph">
+                    Hi! I am a first-year MA student in Linguistics at Boğaziçi University. 
+                    I completed my undergraduate degree in Linguistics at the same 
+                    institution in June 2023. I am mainly interested in syntax, semantics,
+                    computational linguistics and cognitive science. </p>
+                    <p class="paragraph">
+                    Currently, I am helping organize the Student Conference on Linguistics at Boğaziçi University.
+                </p></div>
+        </div>
+    </section>
+    <section class="center" id="research" style="border-top-style:solid; border-top-color: dimgrey;">
+        <div style="width: 90%;">
+            <div>
+                <h3 style="text-align: justify;">Beyond clichés: on the acceptability of modifier stranding in Japanese phrasal compounds</h3>
+                <p class="paragraph" style="margin: 0% 5%;">
+                    <span style="color:#434343;">August 2023</span>
+                    <br>
+                    Poster at 5th Crete Summer School of Linguistics, University of Crete <br>
+                    <a href="src/crete poster.pdf" style="color: black;">Poster</a> </p>
+                </p>
+            </div>
+            <div>
+                <h3 style="text-align: justify;">日本語における句の包摂について ― 容認性条件としての cliché 説に対する反論</h3>
+                <p class="paragraph" style="margin: 0% 5%;">
+                    <span style="color:#434343;">July 2021</span>
+                    <br>
+                    Presented at 日研生プログラム最終発表会,  Osaka University  <br>
+                    <a href="src/cjlc presentation.MOV" style="color: black;">Video</a> </p>
+                </p>
+            </div>    
+        </div>
+    </section>
+    <section  class="center" id="teaching" style="border-top-style:solid; border-top-color: dimgrey; height: 50%;">        
+        <div style="width: 90%;">
+            <div>
+                <h3 style="text-align: justify;">Teaching Assistant 
+                    <span style="font-weight: 100; font-size: medium;"> | S25: Lower Advanced Turkish
+                    </span>
+                </h3>
+                <p class="paragraph" style="margin: 0% 5%;">
+                    <span style="color:#434343;">Summer 2022</span>
+                    <br>
+
+                    Turkish Language and Culture Program, Boğaziçi University 
+                    </p>
+            </div>
+        </div>
+    </section>
+ <footer style="border-top-style:solid; border-top-color: grey; border-top-width: 0.1vw;">
+    <script>
+        function randomFactoid() {
+          var listFacts = [
+        "My interest in HTML stems from copying and pasting MySpace themes.", 
+          "I like to play Dungeons and Dragons in my spare time. ", 
+          "My favorite book is American Gods by Neil Gaiman. ", 
+          "I'm a Leo.", 
+          "I love to travel! So far, I've been to 20 countries. ",
+          "I'm currently reading Thinking, Fast and Slow by Daniel Kahneman.",
+          "I'm currently watching The Office for the first time.",
+          "I made a My Chemical Romance song generator for a final project in an undergraduate course. You can find it on my GitHub."
+        ];
+
+          var randIndex = Math.floor(Math.random() * listFacts.length);
+          var factoidChosen = listFacts[randIndex];
+
+          var messageBox = document.getElementById("factoid");
+          messageBox.innerHTML = factoidChosen;
+        }
+        window.onload = randomFactoid;
+        </script>
+
+    <p>
+        I coded this website myself from scratch using HTML! Let me know if there's anything I could have done better. 
+    </p>
+    <p>
+    <span id="factoid"></span> <span> <button type="button" onclick="randomFactoid()">another random fact about me</button> </span>
+</p>
+ </footer>  
 </body>
 </html>

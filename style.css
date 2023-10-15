@@ -1,0 +1,61 @@
+
+html {
+    scroll-padding-top: 2%;
+    scroll-behavior: smooth;
+}
+header {
+    padding-top: 8%;
+}  
+footer {
+    padding: 8%;
+    text-align: center;
+    color: dimgray;
+    font-size: smaller;
+  }
+  
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 2%;
+    z-index: 1000;
+  }
+.paragraph {
+    text-align: justify; 
+    line-height: 200%; 
+    margin: 5%;
+}
+body {
+   background-color: whitesmoke;
+   text-align: center;
+   font-family: 'Trebuchet MS', sans-serif;
+   overflow: auto;
+}
+section {
+    margin: 0% 15%;
+    height: 100%;
+    max-width: 100%;
+}
+.center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    background-color: whitesmoke;
+}
+li {
+    display: inline;
+}
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 0% 2%;
+    text-decoration: none;
+  }
