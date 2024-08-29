@@ -25,7 +25,10 @@ nav {
 .paragraph {
     text-align: justify; 
     line-height: 200%; 
-    margin: 5%;
+    margin: 3%;
+}
+h3 {
+    margin: 1%
 }
 body {
    background-color: whitesmoke;
