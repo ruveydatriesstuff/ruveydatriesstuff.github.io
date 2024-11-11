@@ -20,7 +20,7 @@
         <div class="center">
             <div style=" margin: 2% 5%;">
                 <h1>Rüveyda Şahyar 
-                    <span style="font-style: italic; font-weight: 100; font-size: medium;">(any/all)</span>
+                    <span style="font-weight: 100; font-size: small;">(they/them)</span>
                 </h1> 
                 <p>ɹyʋejˈdaː ˈʃaxjar̥ </p>
                 <a href="https://github.com/ruveydatriesstuff" style="color:#434343;">GitHub</a>
@@ -35,24 +35,29 @@
                     institution in June 2023. I am interested in syntax, semantics,
                     computational linguistics and cognitive science, as well as Japanese linguistics. </p>
                     <p class="paragraph">
-                    Currently, I am working as a researcher at a project led by Dr. Ena Hodzik on predictive
-                    processes during sight translation by trainee and professional interpreters, where I currently
-                    help with the analysis of data obtained using an eye tracker.  
-                    I am also a part of the Computational Linguistics Reading Group organized by Dr. Ümit 
-                    Atlamaz where we particulary look at learning models.  
+                    Currently, I am part of a project led by Dr. Ena Hodzik on predictive
+                    processes during sight translation by trainee and professional interpreters, where I 
+                    help with the data collection and analysis. 
                 </p></div>
         </div>
     </section>
     <section class="center" id="research" style="border-top-style:solid; border-top-color: dimgrey;">
         <div style="width: 90%;">
             <div>
-                <h3 style="text-align: justify;">Predictive processes in sight translation</h3>
-                <p class="paragraph" style="margin: 0% 5%;">
-                    <span style="color:#434343;">August 2024</span>
-                    <br>
-                    Poster at DGfS Summer School, Georg-August University Göttingen <br>
-                    <a href="src/dgfsposter.pdf" style="color: black;">Poster</a> </p>
-                </p>
+            </p>
+        </p>
+                <h3 style="text-align: justify;">Predictive processes in sight translation: evidence from reading comprehension
+                    during English-Turkish and English-Dutch sight translation</h3>
+                    <p class="paragraph" style="margin: 0% 5%;">
+                        <span style="color:#434343;">September 2024</span> | Jointly presented with Ena Hodzik
+                        <br>
+                        Talk at Interpreting: Cognition and Technology Symposium, Boğaziçi University <br>
+                    </p>
+                    <p class="paragraph" style="margin: 0% 5%;">
+                        <span style="color:#434343;">August 2024</span>
+                        <br>
+                        Poster at DGfS Summer School, Georg-August University Göttingen <br>
+                        <a href="src/dgfsposter.pdf" style="color: black;">Poster</a>
             </div>
             <div>
                 <h3 style="text-align: justify;">Modeling Morphological Learning: Tolerance Principle on Turkish past tense -DI</h3>
@@ -60,14 +65,13 @@
                     <span style="color:#434343;">May 2024</span>
                     <br>
                     Talk at Student Conference on Linguistics (SCOL), Boğaziçi University <br>
-                    <a href="https://www.youtube.com/live/JP1VCfLEDLo?si=PmC01W8I4wp8aoKr&t=31" style="color: black;" target="_blank">Talk video</a> | <a href="src/scol slides.pdf" style="color: black;">Slides</a> </p>
+                    <a href="https://www.youtube.com/live/JP1VCfLEDLo?si=PmC01W8I4wp8aoKr&t=31" style="color: black;" target="_blank">Talk video</a> | <a href="src/scol slides.pdf" style="color: black;">Slides</a> 
                 </p>
                 <p class="paragraph" style="margin: 0% 5%;">
                     <span style="color:#434343;">March 2024</span>
                     <br>
                     Poster at Konstanz Linguistics Conference, University of Konstanz <br>
-                    <a href="src/konstanz poster.pdf" style="color: black;">Poster</a> </p>
-                </p>
+                    <a href="src/konstanz poster.pdf" style="color: black;">Poster</a> 
             </div>
             <div>
                 <h3 style="text-align: justify;">Beyond clichés: on the acceptability of modifier stranding in Japanese phrasal compounds</h3>
@@ -75,8 +79,7 @@
                     <span style="color:#434343;">August 2023</span>
                     <br>
                     Poster at 5th Crete Summer School of Linguistics, University of Crete <br>
-                    <a href="src/crete poster.pdf" style="color: black;">Poster</a> </p>
-                </p>
+                    <a href="src/crete poster.pdf" style="color: black;">Poster</a> 
             </div>
             <div>
                 <h3 style="text-align: justify;">日本語における句の包摂について ― 容認性条件としての cliché 説に対する反論</h3>
@@ -85,7 +88,6 @@
                     <br>
                     Presentation at 日研生プログラム最終発表会 (Nikkensei Program Presentation Session),  Osaka University  <br>
                     <a href="src/cjlc presentation.m4v" style="color: black;" target="_blank">Presentation video</a> | <a href="src/cjlc slides.pdf" style="color: black;">Slides</a> </p>
-                </p>
             </div>    
         </div>
     </section>
@@ -123,7 +125,6 @@
           var listFacts = ["My interest in HTML stems from copying and pasting MySpace themes as a preteen. ", 
           "I like to play Dungeons and Dragons in my spare time. ", 
           "My favorite book is American Gods by Neil Gaiman. ", 
-          "I'm a Leo. ", 
           "I'm a former BP debater. I've competed in the EUDC and Oxford IV! ", 
           "My daily commute includes crossing continents and a ferry ride. ",
           "I love to travel! So far, I've been to 22 countries. ",
@@ -136,6 +137,48 @@
 
           var messageBox = document.getElementById("factoid");
           messageBox.innerHTML = factoidChosen;
+        }
+        function shuffleArray(factlist){
+            var i = (factlist.length);
+            var randIndex;
+            var temp = "";
+            while (i > 0){
+                randIndex = Math.floor(Math.random() * i);
+                temp = factlist[i];
+                factlist[i] = factlist[j];
+                factlist[j] = temp;
+                i--;
+            }
+            return factlist
+        }
+        function initialize(){
+        var factlist = ["My interest in HTML stems from copying and pasting MySpace themes as a preteen. ", 
+          "I like to play Dungeons and Dragons in my spare time. ", 
+          "My favorite book is American Gods by Neil Gaiman. ", 
+          "I'm a Leo. ", 
+          "I'm a former BP debater. I've competed in the EUDC and Oxford IV! ", 
+          "My daily commute includes crossing continents and a ferry ride. ",
+          "I love to travel! So far, I've been to 22 countries. ",
+          "I'm currently reading God-Emperor of Dune by Frank Herbert. ",
+          "I made a My Chemical Romance song generator for a final project in an undergraduate course. You can find it on my GitHub. "
+        ];
+        var i = (factlist.length);
+            var randIndex;
+            var temp = "";
+            while (i > 0){
+                randIndex = Math.floor(Math.random() * i);
+                temp = factlist[i];
+                factlist[i] = factlist[j];
+                factlist[j] = temp;
+                i--;
+            }
+        return factlist
+        }
+        function giveFact(){
+            var shuffledList = initialize();
+            var factoidChosen = shuffledList.pop();
+            var messageBox = document.getElementById("factoid");
+            messageBox.innerHTML = factoidChosen;
         }
         window.onload = randomFactoid;
         </script>
